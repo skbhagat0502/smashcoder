@@ -1,7 +1,172 @@
 <%- include("partials/header"); -%>
-<!-- heading -->
+<div class="heading">
+  <h1>WELCOME TO RA1 FACT</h1>
+  <div class="input">
+    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+  <input type="text" placeholder="search here..." spellcheck="false">
+</div>
+</div>
+<section id="cards">
+  <h1 class="section-heading">Recomended Videos</h1>
 <% posts.forEach(function(post){ %>
-  <h1> <%=  post.title %> </h1>
-  <p> <%=  post.body.substring(0,100)+" ..." %> <a href="/posts/<%=post.title%>">Read more</a> </p>
-<% }); %>
+  <div class="card">
+    <div class="thumbnail">
+      <img src="Images/<%=post.thumbnail.data%>" alt="Thumbnail" />
+    </div>
+    <div id="blog-heading">
+      <h1 class="blog-heading"><%=post.heading%></h1>
+    </div>
+    <div class="para-and-button">
+      <div id="blog-para">
+        <p class="blog-para">
+          <%=post.description%>
+        </p>
+      </div>
+      <button class="watch-now">
+        <i class="fa-brands fa-youtube"></i> watch now
+      </button>
+    </div>
+  </div>
+<%})%>
+      
+  <div class="card">
+    <div class="thumbnail">
+      <img src="Images/thumbnail-1.png" alt="Thumbnail" />
+    </div>
+    <div id="blog-heading">
+      <h1 class="blog-heading">Public talks</h1>
+    </div>
+    <div class="para-and-button">
+      <div id="blog-para">
+        <p class="blog-para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
+          soluta maxime! Atque deleniti quae optio alias officiis porro
+          nemo consectetur facere magnam aliquam. Veritatis consectetur
+        </p>
+      </div>
+      <button class="watch-now">
+        <i class="fa-brands fa-youtube"></i> watch now
+      </button>
+    </div>
+  </div>
+  <div class="card">
+    <div class="thumbnail">
+      <img src="Images/thumbnail-1.png" alt="Thumbnail" />
+    </div>
+    <div id="blog-heading">
+      <h1 class="blog-heading">Public talks</h1>
+    </div>
+    <div class="para-and-button">
+      <div id="blog-para">
+        <p class="blog-para">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
+          provident, voluptas molestiae sed maiores atque delectus a
+          officia repudiandae deserunt doloribus nam inventore ipsum, esse
+          et quas vero, ducimus quae alias dolorem. Inventore,
+          necessitatibus fugit dolorem ipsa soluta explicabo labore dolore
+          repellat laudantium beatae officia omnis voluptas blanditiis
+          accusantium temporibus.
+        </p>
+      </div>
+      <button class="watch-now">
+        <i class="fa-brands fa-youtube"></i> watch now
+      </button>
+    </div>
+  </div>
+  <div class="card">
+    <div class="thumbnail">
+      <img src="Images/thumbnail-1.png" alt="Thumbnail" />
+    </div>
+    <div id="blog-heading">
+      <h1 class="blog-heading">Public talks</h1>
+    </div>
+    <div class="para-and-button">
+      <div id="blog-para">
+        <p class="blog-para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
+          soluta maxime! Atque deleniti quae optio alias officiis porro
+          nemo consectetur facere magnam aliquam. Veritatis consectetur
+        </p>
+      </div>
+      <button class="watch-now">
+        <i class="fa-brands fa-youtube"></i> watch now
+      </button>
+    </div>
+  </div>
+  <div class="card">
+    <div class="thumbnail">
+      <img src="Images/thumbnail-1.png" alt="Thumbnail" />
+    </div>
+    <div id="blog-heading">
+      <h1 class="blog-heading">Public talks</h1>
+    </div>
+    <div class="para-and-button">
+      <div id="blog-para">
+        <p class="blog-para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
+          soluta maxime! Atque deleniti quae optio alias officiis porro
+          nemo consectetur facere magnam aliquam. Veritatis consectetur
+        </p>
+      </div>
+      <button class="watch-now">
+        <i class="fa-brands fa-youtube"></i> watch now
+      </button>
+    </div>
+  </div>
+  <div class="card">
+    <div class="thumbnail">
+      <img src="Images/thumbnail-1.png" alt="Thumbnail" />
+    </div>
+    <div id="blog-heading">
+      <h1 class="blog-heading">Public talks</h1>
+    </div>
+    <div class="para-and-button">
+      <div id="blog-para">
+        <p class="blog-para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
+          soluta maxime! Atque deleniti quae optio alias officiis porro
+          nemo consectetur facere magnam aliquam. Veritatis consectetur
+        </p>
+      </div>
+      <button class="watch-now">
+        <i class="fa-brands fa-youtube"></i> watch now
+      </button>
+    </div>
+  </div>
+</section>
+<section id="testimonials">
+  <h1 class="section-heading">Testimonials</h1>
+  <div class="testimonial">
+    <p class="testimonial-message">
+      <span><i class="fa-solid fa-comments"></i></span>
+      <br />
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+      Cupiditate, odit sit! Obcaecati tempora fugiat voluptatem
+      consequatur dolore, modi facere. Deserunt, sunt! Cupiditate
+      aspernatur alias maiores fuga quaerat! Excepturi, officiis aliquam!
+      <br />
+    </p>
+    <span>
+      <p><b>Rajdeep</b></p>
+      <p>youtuber</p>
+    </span>
+  </div>
+  <div class="testimonial">
+    <p class="testimonial-message">
+      <span><i class="fa-solid fa-comments"></i></span>
+      <br />
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+      Cupiditate, odit sit! Obcaecati tempora fugiat voluptatem
+      consequatur dolore, modi facere. Deserunt, sunt! Cupiditate
+      aspernatur alias maiores fuga quaerat! Excepturi, officiis aliquam!
+      <br />
+    </p>
+    <span>
+      <p><b>Rajdeep</b></p>
+      <p>youtuber</p>
+    </span>
+  </div>
+</section>
+
+</header>
 <%- include("partials/footer"); -%>

@@ -1,4 +1,20 @@
 <%- include("partials/header"); -%>
-<h1>Contact</h1>
-<p> <%= para1 %> </p>  
+<div id="contact">
+<h2>Contact Us</h2> 
+<p>ra1fact.com</p> 
+<p>Please fill the form and we will get back to you as soon as possible.</p>
+<form action="" method="" class="contact-me-form">
+    <label class="label" for="first-name">First Name</label>
+    <input type="text" placeholder="First Name" required>
+    <label class="label" for="last name">Last Name</label>
+    <input type="text" placeholder="Last Name" required>
+    <label class="label" for="email">Email</label>
+    <input type="email" placeholder="Your Email" required>
+    <label class="label" for="message">Phone Number</label>
+    <input type="text" placeholder="Phone Number">
+    <label class="label" for="message">Your message</label>
+    <textarea name="message" id="message-box" cols="30" rows="10" placeholder="Your message..." spellcheck="false" required></textarea>
+    <button>Send</button>
+</form>
+</div>
 <%- include("partials/footer"); -%>

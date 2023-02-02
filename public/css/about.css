@@ -1,0 +1,33 @@
+div.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+div.about-content img {
+    width: 100vw;
+    object-fit: cover;
+    position: relative;
+}
+
+div.about-content h1 {
+    font-size: calc(3rem + .6667vw);
+    color: var(--secondry-color);
+    font-family: var(--primary-font);
+    background-color: white;
+    width: 100vw;
+    text-align: center;
+    padding: 4rem;
+    margin: 10rem 2rem 2rem;
+}
+
+div.about-content p {
+    width: 100vw;
+    font-size: calc(1rem + .6667vw);
+    color: var(--secondry-color);
+    font-family: var(--secondry-font);
+    background-color: white;
+    padding: 2rem;
+}

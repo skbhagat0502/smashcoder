@@ -1,0 +1,84 @@
+div#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 4vw;
+    margin-bottom: 10rem;
+    margin-top: 10rem;
+}
+
+div#contact form {
+    background-color: #ccc;
+    width: calc(24rem + 10*0.6667vw);
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px var(--secondry-color);
+}
+
+div#contact h2 {
+    font-size: calc(2rem + 0.6667vw);
+    font-family: var(--primary-font);
+    margin: 2rem 2rem 0;
+    padding: 2rem;
+}
+
+div#contact p {
+    font-size: calc(1.5rem + 0.6667vw);
+    font-family: var(--primary-font);
+    font-weight: 500;
+    margin: 0 2rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+form.contact-me-form label.label {
+    font-size: 1.5rem;
+    font-family: var(--secondry-font);
+    display: block;
+    text-align: center;
+}
+
+form.contact-me-form input {
+    width: calc(20rem + 10*0.6667vw);
+    display: block;
+    height: 4rem;
+    margin: 2rem auto;
+    padding: 1rem;
+    border: 3px solid var(--secondry-color);
+    border-radius: 5px;
+}
+
+form.contact-me-form textarea#message-box {
+    display: block;
+    width: calc(20rem + 10*0.6667vw);
+    margin: 2rem auto;
+    padding: 1rem;
+    border: 3px solid var(--secondry-color);
+    outline: none;
+    border-radius: 5px;
+    resize: none;
+    font-size: 1.4rem;
+    font-family: var(--secondry-font);
+}
+
+form.contact-me-form button {
+    width: calc(20rem + 10*0.6667vw);
+    display: block;
+    margin: 2rem auto;
+    border-radius: 5px;
+    border: 3px solid var(--secondry-color);
+    height: 4rem;
+    outline: none;
+    background-color: black;
+    outline: 3px solid white;
+    color: white;
+    font-size: 2rem;
+    font-family: var(--secondry-font);
+}
+
+form.contact-me-form button:hover {
+    background-color: rgb(255, 255, 255);
+    outline: 3px solid rgb(0, 0, 0);
+    color: var(--secondry-color);
+}
