@@ -1,84 +1,32 @@
-div#compose {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem 4vw;
-    flex-wrap: wrap;
-    margin-bottom: 10rem;
-    margin-top: 10rem;
+.work {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-
-div.compose {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem 4vw;
+.work h2 {
+  text-align: center;
 }
-
-div.compose h2 {
-    text-align: center;
-    font-size: calc(2rem + 0.6667vw);
-    font-family: var(--primary-font);
-    margin: 2rem 2rem 0;
-    padding: 2rem;
+.work input {
+  height: 4rem;
+  border-radius: 10px;
+  padding: 2rem 1rem;
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-family: var(--primary-font);
+  text-align: center;
+  width: calc(20rem + 20 * 0.6667vw);
 }
-
-div.compose form.compose-form label.label {
-    font-size: 1.5rem;
-    font-family: var(--secondry-font);
-    display: block;
-    text-align: center;
-}
-
-div.compose form.compose-form {
-    background-color: #ccc;
-    width: calc(24rem + 10*0.6667vw);
-    padding: 2rem;
-    border-radius: 5px;
-    box-shadow: 5px 5px 10px var(--secondry-color);
-}
-
-div.compose form.compose-form input {
-    width: calc(20rem + 10*0.6667vw);
-    display: block;
-    height: 4rem;
-    margin: 2rem auto;
-    padding: 1rem;
-    border: 3px solid var(--secondry-color);
-    border-radius: 5px;
-}
-
-div.compose form.compose-form textarea#description {
-    display: block;
-    width: calc(20rem + 10*0.6667vw);
-    margin: 2rem auto;
-    padding: 1rem;
-    border: 3px solid var(--secondry-color);
-    outline: none;
-    border-radius: 5px;
-    resize: none;
-    font-size: 1.4rem;
-    font-family: var(--secondry-font);
-}
-
-div.compose form.compose-form button {
-    width: calc(20rem + 10*0.6667vw);
-    display: block;
-    margin: 2rem auto;
-    border-radius: 5px;
-    border: 3px solid var(--secondry-color);
-    height: 4rem;
-    outline: none;
-    background-color: black;
-    outline: 3px solid white;
-    color: white;
-    font-size: 2rem;
-    font-family: var(--secondry-font);
-}
-
-div.compose form.compose-form button:hover {
-    background-color: rgb(255, 255, 255);
-    outline: 3px solid rgb(0, 0, 0);
-    color: var(--secondry-color);
+.work button {
+  background-color: var(--secondry-color);
+  margin: 2rem auto;
+  height: 4rem;
+  color: var(--primary-color);
+  font-size: 2rem;
+  font-family: var(--secondry-font);
+  padding: auto 2rem;
+  border-radius: 5px;
+  width: 40rem;
+  width: calc(20rem + 20 * 0.6667vw);
 }

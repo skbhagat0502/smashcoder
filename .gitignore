@@ -1,0 +1,26 @@
+# Ignore Node.js modules
+node_modules/
+
+# Ignore log files
+*.log
+
+# Ignore compiled files
+*.compiled
+*.min.js
+
+# Ignore build directories
+dist/
+build/
+out/
+
+# Ignore config files with sensitive information
+config.js
+.env
+
+# Ignore editor files
+.vscode/
+.idea/
+*.swp
+
+# Ignore operating system files
+.DS_Store

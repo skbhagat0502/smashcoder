@@ -1,0 +1,51 @@
+<%- include("partials/header"); -%>
+<div id="compose">
+  <div class="compose">
+    <h2 class="compose-heading">Compose your YT post</h2>
+    <form
+      class="compose-form"
+      action="/composeyt"
+      method="post"
+      enctype="multipart/form-data"
+      autocomplete="off"
+    >
+      <label class="label" for="file">Upload your file</label>
+      <input
+        class="input"
+        type="file"
+        name="thumbnail"
+        accept="image/png, image/jpeg, image/jpg"
+        required
+      />
+      <label class="label" for="heading">Enter heading</label>
+      <input
+        class="input"
+        type="text"
+        placeholder="your Heading goes here..."
+        name="heading"
+        required
+      />
+      <label class="label" for="description">Enter description</label>
+      <textarea
+        class="input description1"
+        name="description"
+        id="description"
+        cols="30"
+        rows="10"
+        maxlength="250"
+        placeholder="Your description goes here..."
+        name="description"
+        required
+      ></textarea>
+      <div class="counter1"></div>
+      <input
+        type="url"
+        name="link"
+        placeholder="Enter your video link here"
+        required
+      />
+      <button type="submit">Upload</button>
+    </form>
+  </div>
+</div>
+<%- include("partials/footer"); -%>

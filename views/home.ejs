@@ -8,7 +8,7 @@
 </div>
 <section id="cards">
   <h1 class="section-heading">Recomended Videos</h1>
-<% posts.forEach(function(post){ %>
+<% posts.reverse().forEach(function(post){ %>
   <div class="card">
     <div class="thumbnail">
       <img src="Images/<%=post.thumbnail.data%>" alt="Thumbnail" />
@@ -22,117 +22,14 @@
           <%=post.description%>
         </p>
       </div>
+      <a href="<%=post.link%>" target="_blank">
       <button class="watch-now">
         <i class="fa-brands fa-youtube"></i> watch now
       </button>
+    </a>
     </div>
   </div>
 <%})%>
-      
-  <div class="card">
-    <div class="thumbnail">
-      <img src="Images/thumbnail-1.png" alt="Thumbnail" />
-    </div>
-    <div id="blog-heading">
-      <h1 class="blog-heading">Public talks</h1>
-    </div>
-    <div class="para-and-button">
-      <div id="blog-para">
-        <p class="blog-para">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
-          soluta maxime! Atque deleniti quae optio alias officiis porro
-          nemo consectetur facere magnam aliquam. Veritatis consectetur
-        </p>
-      </div>
-      <button class="watch-now">
-        <i class="fa-brands fa-youtube"></i> watch now
-      </button>
-    </div>
-  </div>
-  <div class="card">
-    <div class="thumbnail">
-      <img src="Images/thumbnail-1.png" alt="Thumbnail" />
-    </div>
-    <div id="blog-heading">
-      <h1 class="blog-heading">Public talks</h1>
-    </div>
-    <div class="para-and-button">
-      <div id="blog-para">
-        <p class="blog-para">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
-          provident, voluptas molestiae sed maiores atque delectus a
-          officia repudiandae deserunt doloribus nam inventore ipsum, esse
-          et quas vero, ducimus quae alias dolorem. Inventore,
-          necessitatibus fugit dolorem ipsa soluta explicabo labore dolore
-          repellat laudantium beatae officia omnis voluptas blanditiis
-          accusantium temporibus.
-        </p>
-      </div>
-      <button class="watch-now">
-        <i class="fa-brands fa-youtube"></i> watch now
-      </button>
-    </div>
-  </div>
-  <div class="card">
-    <div class="thumbnail">
-      <img src="Images/thumbnail-1.png" alt="Thumbnail" />
-    </div>
-    <div id="blog-heading">
-      <h1 class="blog-heading">Public talks</h1>
-    </div>
-    <div class="para-and-button">
-      <div id="blog-para">
-        <p class="blog-para">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
-          soluta maxime! Atque deleniti quae optio alias officiis porro
-          nemo consectetur facere magnam aliquam. Veritatis consectetur
-        </p>
-      </div>
-      <button class="watch-now">
-        <i class="fa-brands fa-youtube"></i> watch now
-      </button>
-    </div>
-  </div>
-  <div class="card">
-    <div class="thumbnail">
-      <img src="Images/thumbnail-1.png" alt="Thumbnail" />
-    </div>
-    <div id="blog-heading">
-      <h1 class="blog-heading">Public talks</h1>
-    </div>
-    <div class="para-and-button">
-      <div id="blog-para">
-        <p class="blog-para">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
-          soluta maxime! Atque deleniti quae optio alias officiis porro
-          nemo consectetur facere magnam aliquam. Veritatis consectetur
-        </p>
-      </div>
-      <button class="watch-now">
-        <i class="fa-brands fa-youtube"></i> watch now
-      </button>
-    </div>
-  </div>
-  <div class="card">
-    <div class="thumbnail">
-      <img src="Images/thumbnail-1.png" alt="Thumbnail" />
-    </div>
-    <div id="blog-heading">
-      <h1 class="blog-heading">Public talks</h1>
-    </div>
-    <div class="para-and-button">
-      <div id="blog-para">
-        <p class="blog-para">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
-          soluta maxime! Atque deleniti quae optio alias officiis porro
-          nemo consectetur facere magnam aliquam. Veritatis consectetur
-        </p>
-      </div>
-      <button class="watch-now">
-        <i class="fa-brands fa-youtube"></i> watch now
-      </button>
-    </div>
-  </div>
 </section>
 <section id="testimonials">
   <h1 class="section-heading">Testimonials</h1>
@@ -140,30 +37,22 @@
     <p class="testimonial-message">
       <span><i class="fa-solid fa-comments"></i></span>
       <br />
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-      Cupiditate, odit sit! Obcaecati tempora fugiat voluptatem
-      consequatur dolore, modi facere. Deserunt, sunt! Cupiditate
-      aspernatur alias maiores fuga quaerat! Excepturi, officiis aliquam!
+      Smash Coder's YouTube channel is a great programming resource. The videos are informative and easy to follow. I've learned a lot from Smash Coder and have applied what I've learned to my own projects with great success. I highly recommend subscribing to Smash Coder if you want to improve your programming skills or stay up-to-date on the latest trends and techniques.
       <br />
     </p>
     <span>
-      <p><b>Rajdeep</b></p>
-      <p>youtuber</p>
+      <p><b>Anshu</b></p>
     </span>
   </div>
   <div class="testimonial">
     <p class="testimonial-message">
       <span><i class="fa-solid fa-comments"></i></span>
       <br />
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-      Cupiditate, odit sit! Obcaecati tempora fugiat voluptatem
-      consequatur dolore, modi facere. Deserunt, sunt! Cupiditate
-      aspernatur alias maiores fuga quaerat! Excepturi, officiis aliquam!
+      Smash Coder's YouTube channel is an excellent programming resource. The content is top-notch, covering a wide range of topics from beginner to advanced. The explanations are clear and easy to understand, and the production quality is impressive. I highly recommend Smash Coder to anyone looking to improve their programming skills or stay up-to-date on the latest trends and techniques.
       <br />
     </p>
     <span>
-      <p><b>Rajdeep</b></p>
-      <p>youtuber</p>
+      <p><b>Rajveer</b></p>
     </span>
   </div>
 </section>

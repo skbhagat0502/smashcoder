@@ -1,0 +1,8 @@
+<%- include("partials/header"); -%>
+<div class="markdown-body">
+  <p><%=blogs.date%></p>
+  <h1><%=blogs.title%></h1>
+  <p><%=blogs.description%></p>
+  <div><%-blogs.sanitizedHtml%></div>
+</div>
+<%- include("partials/footer"); -%>

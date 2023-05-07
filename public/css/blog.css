@@ -1,31 +1,27 @@
-h2 {
-    font-size: calc(2rem + 0.6667vw);
-    font-family: var(--primary-font);
-    text-align: center;
-    margin: 10rem 2rem 5rem;
+.markdown-body {
+    padding: 45px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
 }
-
-div#blogs {
+div#blogs{
+    margin: 3rem !important;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-    margin: 2rem;
-    background-color: #ccc;
+    flex-wrap: wrap;
+    flex-grow: 1;
     flex-direction: column;
-    margin: 1rem 4vw 2rem;
+    align-items: center;
 }
-
-div#blogs h3 {
-    font-size: calc(1.5rem + 0.6667vw);
-    font-family: var(--primary-font);
-    font-weight: 700;
-    padding: 2rem;
-    text-decoration: underline;
-    text-underline-offset: 1rem;
-}
-
-div#blogs p {
-    font-size: calc(1rem + 0.6667vw);
+a#readMore{
+    background:none;
+    border: none;
     font-family: var(--secondry-font);
+    font-weight: 800;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color:rgb(26, 26, 128);
+    text-decoration: none;
+}
+@media screen and (max-width:776px) {
+    .markdown-body {
+        padding: 20px;
+    }
 }

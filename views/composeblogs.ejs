@@ -1,0 +1,51 @@
+<%- include("partials/header"); -%>
+<div id="composeblogs">
+  <div class="composeblogs">
+    <h2 class="compose-title">Compose your Blogs</h2>
+    <form
+      action="/composeblogs"
+      method="post"
+      class="blog-form"
+      enctype="multipart/form-data"
+    >
+      <label for="heading" class="label">Title</label>
+      <input
+        type="text"
+        placeholder="your blog title"
+        name="title"
+        autocomplete="off"
+      />
+      <label for="date" class="label">Date</label>
+      <input type="date" name="date" autocomplete="off" />
+      <label for="image" class="label">Upload Images</label>
+      <input
+        type="file"
+        name="image"
+        accept="image/png, image/jpeg, image/jpg"
+        multiple
+      />
+      <label for="description" class="label">Description</label>
+      <textarea
+        type="text"
+        placeholder="Description"
+        required
+        autocomplete="off"
+        name="description"
+        id="markdown"
+      ></textarea>
+      <label for="blog" class="label">Write your blog</label>
+      <textarea
+        type="text"
+        id="markdown"
+        cols="30"
+        rows="10"
+        required
+        placeholder="Your blog goes here"
+        name="markdown"
+        autocomplete="off"
+      ></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+<%- include("partials/footer"); -%>
