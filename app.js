@@ -1,3 +1,4 @@
+require("dotenv").config();
 const path = require("path");
 const express = require("express");
 const bodyParser = require("body-parser");
@@ -16,13 +17,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 mongoose.set("strictQuery", true);
 
-mongoose.connect(
-  "mongodb+srv://pandadeveloperofficial:i0UYDy2WqJ0kMLoF@smashcodercluster.mrewaud.mongodb.net/SmashDB",
-  {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  }
-);
+mongoose.connect(process.env.DATABASE, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
 
 const youtubeSchema = new mongoose.Schema({
   thumbnail: { data: Buffer, contentType: String },
