@@ -1,5 +1,5 @@
 {
-  "name": "blogsitev1",
+  "name": "smashcoder",
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
@@ -28,11 +28,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/skbhagat0502/raonefact.git"
+    "url": "git+https://github.com/skbhagat0502/smashcoder.git"
   },
   "bugs": {
-    "url": "https://github.com/skbhagat0502/raonefact/issues"
+    "url": "https://github.com/skbhagat0502/smashcoder/issues"
   },
-  "homepage": "https://github.com/skbhagat0502/raonefact#readme",
+  "homepage": "https://github.com/skbhagat0502/smashcoder#readme",
   "description": ""
 }

@@ -80,6 +80,7 @@ app.get("/", function (request, response) {
   });
 });
 app.get("/home", function (request, response) {
+  console.log(err);
   youtube.find({}, (err, posts) => {
     if (err) {
       console.log(err);
@@ -166,4 +167,4 @@ app.post(
     });
   }
 );
-app.listen(process.env.PORT);
+app.listen(3000);
